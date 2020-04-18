@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="xxx" src="haitun.jpg" alt="一只海豚" />
+    <script>
+      xxx.onload = function () {
+        console.log("图片加载成功");
+      };
+      xxx.onerror = function () {
+        console.log("图片加载失败");
+        xxx.src = "404.png";
+      };
+    </script>
+    <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element"
+      >可替换元素</a
+    >
+  </body>
+</html>
